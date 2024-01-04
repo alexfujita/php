@@ -1,0 +1,390 @@
+body.admin h3 {
+  margin: 40px 0;
+  font-size: 21px;
+}
+
+.admin nav.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.admin nav.navbar ul {
+  list-style-type: none;
+}
+
+.admin nav.navbar ul.navbar-l {
+  padding-left: 0;
+}
+
+.admin nav.navbar ul.navbar-r {
+}
+
+.admin > .container {
+  padding-top: 100px;
+}
+
+.admin .subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.admin ul.tabs.tabs-transparent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.admin ul.tabs.tabs-transparent li a {
+  font-size: 15px;
+}
+
+body.admin .preview-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 114px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 0;
+  background: #26a69a;
+}
+
+body.admin .preview-bar h3 {
+  font-size: 18px;
+}
+
+body.admin .preview-bar h3,
+body.admin .preview-bar input[type="submit"] {
+  margin: 0;
+}
+
+body.admin .nav-wrapper,
+body.admin .nav-content {
+  width: 70%;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.admin nav {
+  line-height: 1.5;
+}
+
+body.admin .nav-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.admin nav .brand-logo {
+  font-size: 1.6rem;
+  position: relative;
+}
+
+body.admin nav ul a {
+  display: flex;
+  align-items: center;
+}
+
+body.admin nav i.material-icons {
+  line-height: 2.4rem;
+  height: 2.4rem;
+  padding-right: 5px;
+}
+
+body.admin .nav-wrapper .navbar-brand {
+  padding: 0;
+}
+
+/* FORM STYLES */
+.form {
+  padding: 20px 40px 40px 40px;
+}
+
+input[type="submit"] {
+  margin: 40px 0;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #666;
+  margin: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #666;
+  padding: 0 40px;
+}
+
+.preview > h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.preview input {
+  /**/
+}
+
+.preview + header {
+  padding-top: 50px;
+}
+
+h3.admin {
+  text-align: center;
+  size: 18px;
+}
+
+.table thead th {
+  font-size: 15px;
+  font-weight: normal;
+  color: #666;
+}
+
+.table thead th.align-center {
+  text-align: center;
+}
+
+.table tbody td.align-center {
+  text-align: center;
+}
+
+.waves-effect.waves-light.btn {
+  margin: 0;
+}
+
+body.admin .modal-background {
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+.modal-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 60px;
+  text-align: center;
+}
+
+.modal-content {
+  padding-bottom: 40px;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unscrollable {
+  overflow: hidden;
+  height: 100%;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+body.admin .row {
+  margin-bottom: 0;
+}
+
+body.admin .input-field > label {
+  top: -30px;
+  color: #000;
+}
+
+body.admin .input-field > label.active {
+  top: 0;
+}
+
+.switch.special label .lever {
+  background-color: rgba(0, 0, 0, 0.38);
+}
+.switch.special label input[type="checkbox"]:checked + .lever {
+  background-color: #81d4fa;
+}
+.switch.special label input[type="checkbox"]:checked + .lever:after {
+  background-color: #039be5;
+}
+
+.row.form .row {
+  margin: 30px 0;
+}
+
+.image-preview-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image-preview {
+  margin: 20px 0;
+  width: auto;
+  max-width: 100%;
+}
+
+.image-preview-wrapper a.btn {
+  margin: 0 0 20px 0;
+}
+
+#app .container {
+  padding-top: 100px;
+}
+
+.file-field .btn:hover,
+.file-field .btn-large:hover,
+.btn-fluid .btn-large:hover,
+.file-field .btn-small:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.row.btn-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0 20px;
+}
+
+.row.btn-fluid .col.s8 {
+  margin-right: auto;
+}
+
+.row.btn-fluid a {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.admin .file-field span {
+  font-weight: normal;
+}
+
+.invalid-feedback {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #dc3545;
+}
+
+input[type="text"].is-invalid,
+input[type="password"].is-invalid {
+  border-color: #dc3545 !important;
+}
+
+body.admin td,
+body.admin th {
+  padding: 15px 15px;
+}
+
+.row .label-typo {
+  font-size: 1rem;
+}
+
+/* localhost */
+.nav--local {
+  background-color: #004792;
+}
+
+/* https://dev.xxx.jp/admin/xxx */
+.nav--dev {
+  background-color: #001350;
+}
+
+body.admin nav.nav--local .brand-logo,
+body.admin nav.nav--dev .brand-logo {
+  font-size: 1.5rem;
+}
+
+/* --------------------------------------- error */
+
+.error--Block {
+  padding: 15px 0;
+}
+
+.error--Text {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #dc3545;
+}
+
+/* --------------------------------------- @media */
+@media screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav.nav-extended .nav-wrapper,
+  body.admin .nav-content {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body.admin .nav-wrapper {
+    display: block;
+  }
+  .row .label-typo {
+    font-size: 1rem;
+  }
+  body.admin #container-members {
+    width: 100%;
+    max-width: none !important;
+  }
+
+  .btn.footerbtn {
+    display: block !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .row .label-typo {
+      font-size: 1rem;
+    }
+    body.admin #container-members {
+      width: 100%;
+      max-width: none !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  nav.nav-extended .nav-wrapper,
+  body.admin .nav-content {
+    width: 85%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  nav.nav-extended .nav-wrapper {
+    width: 70%;
+  }
+}

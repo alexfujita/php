@@ -1,0 +1,83 @@
+#calendar {
+  padding: 2rem;
+}
+.calendar {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    h2 {
+      margin: 0;
+    }
+  }
+}
+.weekdays {
+  display: flex;
+  align-items: center;
+  .weekday {
+    flex: 1 1 14.2857142857%;
+    display: flex;
+    justify-content: center;
+    background: $primary;
+    color: #fff;
+    padding: 1rem 0;
+  }
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  &:after {
+    content: "";
+    flex: auto;
+  }
+  // height: 480px;
+
+  .day {
+    flex: 0 1 14.2857142857%;
+    height: 10rem;
+    border-left: 1px solid $border;
+    border-bottom: 1px solid $border;
+    box-sizing: border-box;
+    &:nth-of-type(7n) {
+      border-right: 1px solid $border;
+    }
+    &:last-of-type {
+      border-right: 1px solid $border;
+    }
+    &__header {
+      text-align: right;
+      padding: 1rem 1rem 0.5rem 1rem;
+    }
+    &__body {
+      display: block;
+      padding: 0.5rem 1rem 1rem 1rem;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex: 1 1 100%;
+
+    .day {
+      span {
+        flex: 1 1 14.2857142857%;
+      }
+    }
+  }
+}
+
+.empty {
+  height: 100%;
+  background: $empty;
+}
+
+.client__link {
+  cursor: pointer;
+  color: $primary; 
+}

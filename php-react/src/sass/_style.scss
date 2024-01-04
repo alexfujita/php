@@ -1,0 +1,188 @@
+.flex-column {
+  flex-direction: column;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 12px;
+}
+
+.main {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.main__inner {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin: 1rem 0;
+  align-items: flex-start;
+}
+
+fieldset {
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* GRID */
+.col {
+  display: flex;
+  align-items: center;
+}
+
+.col100 {
+  flex: 1 1 100%;
+}
+
+.col90 {
+  flex: 1 1 90%;
+}
+
+.col80 {
+  flex: 1 1 80%;
+}
+
+.col75 {
+  flex: 1 1 75%;
+}
+
+.col60 {
+  flex: 1 1 60%;
+}
+
+.col50 {
+  flex: 1 1 50%;
+}
+
+.col40 {
+  flex: 1 1 40%;
+}
+
+.col30 {
+  flex: 1 1 30%;
+}
+
+.col25 {
+  flex: 1 1 25%;
+}
+
+.col20 {
+  flex: 1 1 20%;
+}
+
+.col10 {
+  flex: 1 1 10%;
+}
+
+.m2-0 {
+  margin: 2rem 0;
+}
+.m4-0 {
+  margin: 4rem 0;
+}
+
+#formClient {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.75); /* Black w/ opacity */
+  padding: 2rem;
+
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #888;
+    &--header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      background-color: $primary;
+      color: $white;
+
+      h2 {
+        margin: 0;
+      }
+    }
+    &--body {
+      padding: 2rem;
+    }
+    &--footer {
+      border-top: 1px solid $border;
+      &-buttons {
+        background: $primaryLight;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+      }
+      &-copyright {
+        background: $primary;
+        color: $white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  word-break: keep-all;
+  text-align: right;
+  background: #000;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      color: $white;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-decoration: none;
+      padding: 1rem 4rem;
+
+      &:not(:last-of-type) {
+        border-bottom: solid 1px #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+PHP and jQuery base website sample
